@@ -1,0 +1,50 @@
+[package]
+name = "Bagel_Bomber"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+wg_2024 = { git = "https://github.com/WGL-2024/WGL_repo_2024.git", features = [
+    "serialize",
+] }
+toml = "0.8.19"
+crossbeam-channel = "0.5.13"
+serde = { version = "1.0.215", features = ["derive"] }
+serde_json = "1.0.133"
+rand = "0.8.5"
+sorted-vec = "0.8.5"
+iced = { version = "0.13.1", features = ["advanced", "canvas", "image", "tokio"] }
+image = "0.24"
+log = "0.4.25"
+text_io = "0.1.12"
+colored = "3.0.0"
+graph = { git = "https://github.com/daw-dev/graph" }
+open = "5.3.2"
+attohttpc = "0.28.2"
+scraper = "0.22.0"
+
+# GROUPS' DRONES:
+# - Rolling drones
+rolling_drone = { git = "https://github.com/giorebecchi/RollingDrone.git" }
+# - fungi
+fungi_drone = { git = "https://github.com/Fungi-B-D/Fungi-Drone.git" }
+# - LeDron James
+LeDron_James = { git = "https://github.com/anass03/LeDron_James.git", default-features = false }
+# - Rust Do It
+rust_do_it = { git = "https://github.com/RustDoIt/Drone.git" }
+# - D.R.O.N.E.
+d-r-o-n-e_drone = { git = "https://github.com/AP-2024-25-D-R-O-N-E/drone.git" }
+# - Dr. Ones
+dr_ones = { git = "https://github.com/Dr-Ones/drone" }
+# - Rustafarian
+rustafarian-drone = { git = "https://github.com/Rustafarian-Unitn/rustafarian-drone" }
+# - Lockheed Rustin
+lockheedrustin-drone = { git = "https://github.com/Lockheed-Rustin/drone.git" }
+# - Rust & Furious
+RF_drone = { git = "https://github.com/RustAndFurious/RF_drone" }
+# - Rusty Drones
+rusty_drones = { git = "https://github.com/rusty-drone-2024/rusty-drone.git" }
+
+
+[dev-dependencies]
+bagel_bomber = { git = "https://github.com/daw-dev/bagel-bomber.git", default-features = false }
